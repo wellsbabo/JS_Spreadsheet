@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handsontable for Javascript example</title>
+    <base href=".">
+	<meta charset="UTF-8" />
+  <link href="./src/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-------모달창-------->
+  <div class="background">
+    <div class="window">
+      <div class="popup">
+        <form action="http://localhost:33997/upload_csv" method="POST" enctype="multipart/form-data">
+          <input id="my-input" type="file" name="file"/>
+          <input type="submit" id="upload-file" onClick="window.location.reload()"/>
+        </form>
+        <button id="close">팝업닫기</button>
+      </div>
+      <div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!---------컨트롤 패널---------------->
+  <div>
+    <div class="controls">
+      <h4>모든 데이터가 현재 페이지에 렌더링되어있으니 Ctrl+f 를 통해 원하는 데이터를 찾으세요</h4>
+      <button id="export-file" class="custom-btn btn-5">Download CSV</button>
+      <button id="save" class="custom-btn btn-5">Save data</button>
+      <button id="delete" class="custom-btn btn-5">Delete</button>
+      <button id="import-file" class="custom-btn btn-5">Upload CSV</button>
+    </div>
+  </div>
+
+</br></br></br></br></br>
+  <!-------테이블 부분---------->
+  <div id="example"></div>
+  <script src="./src/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+button {
+    margin: 5px;
+    outline: none;
+  }
+
+  .custom-btn {
+    width: 100px;
+    height: 25px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+
+  .btn-5 {
+    background: #000;
+    color: #fff;
+    /* line-height: 42px; */
+    padding: 0;
+    border: none;
+  }
+  .btn-5:hover {
+    background: transparent;
+    color: #000;
+     box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+  }
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #000;
+    transition:400ms ease all;
+  }
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+  .mainSearch {
+    width: 250px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+  }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+
+      /* 숨기기 */
+      z-index: -1;
+      opacity: 0;
+    }
+
+    .show {
+      opacity: 1;
+      z-index: 1000;
+      transition: all 0.5s;
+    }
+
+    .window {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .popup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+
+      /*팝업창 크기 */
+      width: 500px;
+      height: 100px;
+
+      /* 초기에 약간 아래에 배치 */
+      transform: translate(-50%, -40%);
+    }
+    .show .popup {
+      transform: translate(-50%, -50%);
+      transition: all 0.5s;
+    }
+
+    #my-input{
+      width:300px;
+      height:50px;
+    }
+
+    .controls{
+      width:100%;
+      position: fixed;
+      top: 0px;
+      z-index:999999;
+      background-color: rgb(224, 221, 221);
+    }
+
+    #if{
+      width: 0px;
+      height: 0px;
+      border: 0px;
+  }
